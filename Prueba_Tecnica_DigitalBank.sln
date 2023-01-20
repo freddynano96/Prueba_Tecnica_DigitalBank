@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_CapaNegocio", "..\WS_CapaNegocio\WS_CapaNegocio.csproj", "{A1C32BA5-DAEA-4B8B-BAE4-AE07E2DFC33C}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BaseDatos_PruebasTecnica", "..\BaseDatos_PruebasTecnica\BaseDatos_PruebasTecnica.sqlproj", "{FDCD0579-83E1-4B1F-8976-9A99ED61F1D4}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BaseDatos_PruebasTecnica", "BaseDatos_PruebasTecnica\BaseDatos_PruebasTecnica.sqlproj", "{FDCD0579-83E1-4B1F-8976-9A99ED61F1D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "..\CapaDatos\CapaDatos.csproj", "{3EB737C8-6ED0-4BBD-A4E1-0BF9DEEC7B51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{3EB737C8-6ED0-4BBD-A4E1-0BF9DEEC7B51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoWeb_CapaPresentacion", "..\ProyectoWeb_CapaPresentacion\ProyectoWeb_CapaPresentacion.csproj", "{15AEC492-AE0B-44A8-BDF3-18F5F5319B0B}"
 	ProjectSection(ProjectDependencies) = postProject
