@@ -89,7 +89,7 @@
       <Project>{3eb737c8-6ed0-4bbd-a4e1-0bf9deec7b51}</Project>
       <Name>CapaDatos</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Prueba_Tecnica_DigitalBank\ViewModels\ViewModels.csproj">
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
       <Project>{34a65966-3f87-4732-93b4-134ac9531ccc}</Project>
       <Name>ViewModels</Name>
     </ProjectReference>
