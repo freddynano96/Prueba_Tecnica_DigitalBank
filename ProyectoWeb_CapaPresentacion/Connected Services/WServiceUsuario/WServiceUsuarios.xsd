@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ViewModels" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ViewModels" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:63876/WServiceUsuarios.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="RespuestaServicioOfint">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="RespuestaServicioOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/ViewModels" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Datos" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MensajeDeError" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="OK" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespuestaServicioOfint" nillable="true" type="tns:RespuestaServicioOfint" />
+  <xs:complexType name="CrearUsuarioViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CrearUsuarioViewModel" nillable="true" type="tns:CrearUsuarioViewModel" />
+  <xs:complexType name="RespuestaServicioOfUsuarioViewModelErWrKz08">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="RespuestaServicioOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/ViewModels" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="UsuarioViewModel" Namespace="http://schemas.datacontract.org/2004/07/ViewModels" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Datos" nillable="true" type="tns:UsuarioViewModel" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MensajeDeError" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="OK" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespuestaServicioOfUsuarioViewModelErWrKz08" nillable="true" type="tns:RespuestaServicioOfUsuarioViewModelErWrKz08" />
+  <xs:complexType name="UsuarioViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Edad" type="xs:int" />
+      <xs:element minOccurs="0" name="Fecha_Nacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre_Usuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsuarioViewModel" nillable="true" type="tns:UsuarioViewModel" />
+  <xs:complexType name="RespuestaServicioOfboolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="RespuestaServicioOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/ViewModels" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="boolean" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Datos" type="xs:boolean" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MensajeDeError" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="OK" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespuestaServicioOfboolean" nillable="true" type="tns:RespuestaServicioOfboolean" />
+  <xs:complexType name="ActualizarUsuarioViewModel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CrearUsuarioViewModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="UsuarioId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActualizarUsuarioViewModel" nillable="true" type="tns:ActualizarUsuarioViewModel" />
+  <xs:complexType name="RespuestaServicioOfArrayOfUsuarioViewModelErWrKz08">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="RespuestaServicioOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/ViewModels" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfUsuarioViewModel" Namespace="http://schemas.datacontract.org/2004/07/ViewModels" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Datos" nillable="true" type="tns:ArrayOfUsuarioViewModel" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MensajeDeError" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element minOccurs="0" name="OK" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespuestaServicioOfArrayOfUsuarioViewModelErWrKz08" nillable="true" type="tns:RespuestaServicioOfArrayOfUsuarioViewModelErWrKz08" />
+  <xs:complexType name="ArrayOfUsuarioViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UsuarioViewModel" nillable="true" type="tns:UsuarioViewModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsuarioViewModel" nillable="true" type="tns:ArrayOfUsuarioViewModel" />
+</xs:schema>

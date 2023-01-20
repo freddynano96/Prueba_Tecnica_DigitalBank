@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="WSUsuarios" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63876/WServiceUsuarios.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63876/WServiceUsuarios.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63876/WServiceUsuarios.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ViewModels" />
+      <xsd:import schemaLocation="http://localhost:63876/WServiceUsuarios.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWSUsuarios_GetCantidadUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCantidadUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_GetCantidadUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCantidadUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_CrearUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_CrearUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_EliminarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_EliminarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_ActualizarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_ActualizarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_GetListaUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_GetListaUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_GetUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_GetUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_GetListaUsuariosPorBusqueda_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaUsuariosPorBusqueda" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_GetListaUsuariosPorBusqueda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaUsuariosPorBusquedaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_GetCantidadUsuariosPorBusqueda_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCantidadUsuariosPorBusqueda" />
+  </wsdl:message>
+  <wsdl:message name="IWSUsuarios_GetCantidadUsuariosPorBusqueda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCantidadUsuariosPorBusquedaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWSUsuarios">
+    <wsdl:operation name="GetCantidadUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSUsuarios/GetCantidadUsuarios" message="tns:IWSUsuarios_GetCantidadUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSUsuarios/GetCantidadUsuariosResponse" message="tns:IWSUsuarios_GetCantidadUsuarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSUsuarios/CrearUsuario" message="tns:IWSUsuarios_CrearUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSUsuarios/CrearUsuarioResponse" message="tns:IWSUsuarios_CrearUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSUsuarios/EliminarUsuario" message="tns:IWSUsuarios_EliminarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSUsuarios/EliminarUsuarioResponse" message="tns:IWSUsuarios_EliminarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSUsuarios/ActualizarUsuario" message="tns:IWSUsuarios_ActualizarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSUsuarios/ActualizarUsuarioResponse" message="tns:IWSUsuarios_ActualizarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListaUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSUsuarios/GetListaUsuarios" message="tns:IWSUsuarios_GetListaUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSUsuarios/GetListaUsuariosResponse" message="tns:IWSUsuarios_GetListaUsuarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSUsuarios/GetUsuario" message="tns:IWSUsuarios_GetUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSUsuarios/GetUsuarioResponse" message="tns:IWSUsuarios_GetUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListaUsuariosPorBusqueda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSUsuarios/GetListaUsuariosPorBusqueda" message="tns:IWSUsuarios_GetListaUsuariosPorBusqueda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSUsuarios/GetListaUsuariosPorBusquedaResponse" message="tns:IWSUsuarios_GetListaUsuariosPorBusqueda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCantidadUsuariosPorBusqueda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSUsuarios/GetCantidadUsuariosPorBusqueda" message="tns:IWSUsuarios_GetCantidadUsuariosPorBusqueda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSUsuarios/GetCantidadUsuariosPorBusquedaResponse" message="tns:IWSUsuarios_GetCantidadUsuariosPorBusqueda_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWSUsuarios" type="tns:IWSUsuarios">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCantidadUsuarios">
+      <soap:operation soapAction="http://tempuri.org/IWSUsuarios/GetCantidadUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearUsuario">
+      <soap:operation soapAction="http://tempuri.org/IWSUsuarios/CrearUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IWSUsuarios/EliminarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IWSUsuarios/ActualizarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListaUsuarios">
+      <soap:operation soapAction="http://tempuri.org/IWSUsuarios/GetListaUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsuario">
+      <soap:operation soapAction="http://tempuri.org/IWSUsuarios/GetUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListaUsuariosPorBusqueda">
+      <soap:operation soapAction="http://tempuri.org/IWSUsuarios/GetListaUsuariosPorBusqueda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCantidadUsuariosPorBusqueda">
+      <soap:operation soapAction="http://tempuri.org/IWSUsuarios/GetCantidadUsuariosPorBusqueda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSUsuarios">
+    <wsdl:port name="BasicHttpBinding_IWSUsuarios" binding="tns:BasicHttpBinding_IWSUsuarios">
+      <soap:address location="http://localhost:63876/WServiceUsuarios.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
