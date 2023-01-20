@@ -8,4 +8,4 @@ La conexión a la base de datos se encuentra quemada en el codigo del proyecto C
 El CRUD se realizo por medio de Stored Procedure y la ejecución se encuentra en la entidad Usuario del proyecto Capa Datos que encapsula estas ejecuciones para la Capa de Negocio
 
 # Tecnologias Usadas
-Se uso ASP.NET WebForms de .NET Framework 4.8 al igual que en Windows Communication Foundation Service, para la conexión y la ejecuión de la base de datos se uso System.Data
+Se uso ASP.NET WebForms de .NET Framework 4.8 al igual que en Windows Communication Foundation Service, para la conexión y la ejecuión de la base de datos se uso System.Data, para la Capa Presentación se uso el framework con los temas basicos de Bootstrap 3.4.1.
